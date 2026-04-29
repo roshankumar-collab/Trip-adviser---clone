@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripadvisor Clone</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+<nav class="navbar">
+<div class="nav-left">
+<div class="logo-circle">✦</div>
+<h2>Tripadvisor</h2>
+</div>
+<ul class="nav-links">
+<li>Discover</li>
+<li>Trips</li>
+<li>Review</li>
+<li>Forums</li>
+</ul>
+<div class="nav-right">
+<button class="signin">Sign in</button>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Where to?</h1>
+<div class="menu-tabs">
+<span class="active">
+<i class="fa-solid fa-magnifying-glass"></i>
+Search All
+</span>
+
+<span>
+<i class="fa-solid fa-hotel"></i>
+Hotels
+</span>
+
+<span>
+<i class="fa-solid fa-camera"></i>
+Things To Do
+</span>
+
+<span>
+<i class="fa-solid fa-utensils"></i>
+Restaurants
+</span>
+
+<span>
+<i class="fa-solid fa-plane-departure"></i>
+Flights
+</span>
+
+<span>
+<i class="fa-solid fa-house"></i>
+Holiday Homes
+</span>
+</div>
+</section>
+
+<section class="banner">
+<div class="banner-text">
+<h2>Find things to do for everything you're into</h2>
+<p>Browse 400,000+ experiences and book with confidence.</p>
+<button>Book now</button>
+</div>
+<div class="banner-img"></div>
+</section>
+<div class="popup-overlay" id="popup">
+<div class="popup-box">
+<span class="close-btn" onclick="closePopup()">×</span>
+<h2>Unlock Travel Deals</h2>
+<p>Get exclusive discounts on hotels and tours.</p>
+<button onclick="closePopup()">Explore Now</button>
+</div>
+</div>
+
+<div class="offer-popup" id="offer">
+<h3>🔥 Limited Offer 30% Off</h3>
+<button onclick="hideOffer()">Claim</button>
+</div>
+
+<script>
+setTimeout(()=>{
+document.getElementById("popup").style.display="flex"
+},2500)
+
+setTimeout(()=>{
+document.getElementById("offer").style.right="30px"
+},4500)
+
+function closePopup(){
+document.getElementById("popup").style.display="none"
+}
+
+function hideOffer(){
+document.getElementById("offer").style.right="-400px"
+}
+</script>
+
+<section class="section">
+<h2>Explore the world’s best places</h2>
+<div class="cards">
+<div class="card">
+<img src="maldeivs.jpg" alt="">
+<h3>Maldives</h3>
+</div>
+<div class="card">
+<img src="New York City.jpg">
+<h3>New York</h3>
+</div>
+<div class="card">
+<img src="TA 2.jpg">
+<h3>Paris</h3>
+</div>
+<div class="card">
+<img src="tokyo.jpg">
+<h3>Tokyo</h3>
+</div>
+</div>
+</section>
+
+<section class="section green-bg">
+<h2>Top places in Tamilnadu</h2>
+<div class="cards">
+<div class="tour-card">
+<img src="ooty.jpg">
+<h4>Ooty</h4>
+<p>4.9 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="kodai.jpg">
+<h4>Kodaikanal</h4>
+<p>4.8 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="Thanjavur temple.jpg">
+<h4>Tanjavur</h4>
+<p>4.7 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="Sunrise.jpg">
+<h4>Kanyakumari</h4>
+<p>4.9 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="athirapally waterfalls.jpg">
+<h4>Athirapally</h4>
+<p>4.9 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="Adiyogi shiva.jpg">
+<h4>Coimbatore</h4>
+<p>4.8 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="kolukku.jpg">
+<h4>kolukkumalai</h4>
+<p>4.7 ★★★★★</p>
+<span></span>
+</div>
+<div class="tour-card">
+<img src="pondy.jpg">
+<h4>Pondychery</h4>
+<p>4.9 ★★★★★</p>
+<span></span>
+</div>
+</div>
+</section>
+<div class="chatbot">💬 Need Travel Help?</div>
+
+
+<section class="promo">
+<div>
+<h2>Travelers' Choice Awards Best of the Best</h2>
+<p>Among our top 1% of places, stays, eats, and experiences.</p>
+<button>See winners</button>
+</div>
+</section>
+
+<footer>
+<h3>Tripadvisor</h3>
+<p>Discover. Explore. Travel.</p>
+
+<footer class="footer">
+<div class="footer-top">
+
+<div class="footer-col">
+<h4>About Tripadvisor</h4>
+<ul>
+<li>About Us</li>
+<li>Press</li>
+<li>Resources</li>
+<li>Careers</li>
+<li>Trust & Safety</li>
+<li>Contact us</li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Explore</h4>
+<ul>
+<li>Write a Review</li>
+<li>Add a Place</li>
+<li>Travel Guides</li>
+<li>Help Center</li>
+<li>Forums</li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Do Business With Us</h4>
+<ul>
+<li>Owners</li>
+<li>Business Advantage</li>
+<li>Sponsored Placements</li>
+<li>Advertise</li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Get The App</h4>
+<ul>
+<li>iPhone App</li>
+<li>Android App</li>
+</ul>
+<div class="socials">
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-x-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+</div>
+</div>
+
+</div>
+
+<div class="footer-middle">
+<div class="foot-logo">
+<span class="logo-badge">✦</span>
+<h3>Tripadvisor</h3>
+</div>
+
+<div class="selectors">
+<select>
+<option>₹ INR</option>
+<option>$ USD</option>
+<option>€ EUR</option>
+</select>
+
+<select>
+<option>India</option>
+<option>United States</option>
+<option>France</option>
+</select>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>
+© 2026 Tripadvisor Clone. All rights reserved.
+Terms of Use • Privacy • Cookies • Site Map • Devoloped by Roshan
+</p>
+</div>
+</footer>
+</footer>
+
+</body>
+</html>
+
